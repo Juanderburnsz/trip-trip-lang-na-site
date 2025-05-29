@@ -1,10 +1,9 @@
 body {
-    background-color: #f0f8ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -20,4 +19,25 @@ h1 {
 h1:hover {
     transform: scale(1.1);
     color: #ff6347;
+}
+
+/* Add to your CSS file */
+#animated-text {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow:
+    2px 2px 8px #000,
+    0 0 10px #00f,
+    0 0 20px #0ff;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), color 0.4s;
+  cursor: pointer;
+}
+
+#animated-text.animate-text {
+  transform: scale(1.15) rotate(-2deg);
+  color: #ffeb3b;
+  text-shadow:
+    2px 2px 12px #222,
+    0 0 20px #ff0,
+    0 0 40px #f0f;
 }
