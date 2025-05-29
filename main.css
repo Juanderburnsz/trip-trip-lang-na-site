@@ -27,7 +27,7 @@ h1:hover {
     2px 2px 8px #000,
     0 0 10px #00f,
     0 0 20px #0ff;
-  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), color 0.4s;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), color 2.5s;
   cursor: pointer;
 }
 
